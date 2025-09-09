@@ -1,0 +1,23 @@
+body {
+  position: relative;
+  background-color: #b8b8b8; /* tu color base */
+  margin: 0;
+  padding: 0;
+}
+
+/* Overlay blanco arriba que genera el difuminado */
+body::before {
+  content: "";
+  position: fixed; /* siempre visible arriba */
+  top: 35px; /* justo debajo del navbar */
+  left: 0;
+  width: 100%;
+  height: 80px; /* controla el tamaño del difuminado */
+  background: linear-gradient(
+    to top,
+    rgba(255,255,255,0) 0%,  /* transparente */
+    rgb(255, 255, 255) 100% /* blanco sólido */
+  );
+  pointer-events: none; /* no bloquea clics */
+  z-index: 999; /* encima del contenido, pero debajo del navbar */
+}

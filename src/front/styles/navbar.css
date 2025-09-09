@@ -1,6 +1,18 @@
-ul, .brand{
-    margin-left: 40px;
+.navbar {
+  background: rgba(255,255,255,0.85); /* O usa rgba(0,0,0,0.7) para fondo oscuro */
+  backdrop-filter: blur(2px); /* Opcional: desenfoque para mejor legibilidad */
+ position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* más que el overlay */
+  }
+
+ul,
+/*Posiciones del nav*/
+.brand {
+  margin-left: 40px;
 }
-.nav-option{
-    margin-left: 50px;
+.nav-option {
+  margin-left: 50px;
 }
+

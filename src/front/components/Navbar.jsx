@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import funeralLogo from "../assets/img/funeralLogo.png";
 
 export const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -12,7 +13,14 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
 			<div className="container-fluid">
-				<i className="fa-brands fa-web-awesome brand"></i>
+				<Link className="navbar-brand" to="/">
+					<img
+						src={funeralLogo}
+						alt="Logo Crematorio Animal"
+						className="d-inline-block align-text-top"
+					/>
+				</Link>
+
 				<button
 					className="navbar-toggler"
 					type="button"

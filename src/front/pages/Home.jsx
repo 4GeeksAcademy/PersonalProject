@@ -36,12 +36,20 @@ export const Home = () => {
 		<div className="container-fluid">
 			<header className="text-center mt-0">
 				<div className="row">
-					<div className="col-6">	
-
-					</div>
-					<div className="col-6">
+					<div className="col-12">
 						<div className="hero-banner">
 							<img src={madridTowers} className="img-fluid hero-img" alt="Madrid Towers" />
+
+							<div className="hero-text">
+								<h1 className="display-4 fw-bold">Welcome to MyApp</h1>
+								<p className="lead">
+									This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+									to featured content or information.
+								</p>
+								<p className="lead">Message from backend: {store.hello}</p>
+							</div>
+
+							<div className="gradient-overlay"></div>
 						</div>
 					</div>
 				</div>

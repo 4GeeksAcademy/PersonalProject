@@ -1,18 +1,21 @@
 .navbar {
-  background: rgba(255,255,255,0.85); /* O usa rgba(0,0,0,0.7) para fondo oscuro */
   backdrop-filter: blur(2px); /* Opcional: desenfoque para mejor legibilidad */
- position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* más que el overlay */
-  }
+}
 
 ul,
-/*Posiciones del nav*/
-.brand {
-  margin-left: 40px;
-}
 .nav-option {
   margin-left: 50px;
 }
 
+.navbar-brand img {
+  height: 55px; /* Ajusta según el tamaño deseado */
+  width: 100px; /* Ajusta según el tamaño deseado */
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+  margin: 0 0 0 50px;
+  padding: 0;
+  display: block;
+}

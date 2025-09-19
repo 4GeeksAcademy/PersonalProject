@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
 }
+:root { --nav-height: 56px; }  /* ajusta a tu navbar real */
+body { padding-top: calc(var(--nav-height) + 40px); } /* ~40px alto de la barra de anuncio */
 
 /* Overlay blanco arriba que genera el difuminado */
 body::before {

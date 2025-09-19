@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   z-index: 1000; /* más que el overlay */
+  margin-bottom: 20px;
 }
 
 ul,

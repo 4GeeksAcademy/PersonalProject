@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import madridTowers from "../assets/img/madridTowers.jpg";
+import animalBanner from "../assets/img/animalBanner.jpg"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import "../styles/home.css";
 export const Home = () => {
@@ -34,24 +34,18 @@ export const Home = () => {
 
 	return (
 		<div className="container-fluid">
-			<header className="text-center mt-0">
-				<div className="row">
-					<div className="col-12">
-						<div className="hero-banner">
-							<img src={madridTowers} className="img-fluid hero-img" alt="Madrid Towers" />
+			<header
+				className="hero-banner"
+				style={{ backgroundImage: `url(${animalBanner})` }}
+			>
+				<div className="hero-overlay">
+					<h1 className="display-4 fw-bold">A worthy tribute for your pet</h1>
 
-							<div className="hero-text">
-								<h1 className="display-4 fw-bold">Welcome to MyApp</h1>
-								<p className="lead">
-									This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-									to featured content or information.
-								</p>
-								<p className="lead">Message from backend: {store.hello}</p>
-							</div>
-
-							<div className="gradient-overlay"></div>
-						</div>
-					</div>
+					<p className="lead">
+						A respectful and personalized cremation service, offering dignity, compassion, and care for your beloved companion
+					</p>
+					{/* (Opcional) CTA, si luego quieres activarlo */}
+					<a href="#contact" className="btn hero-btn">Book a Services</a>
 				</div>
 			</header>
 		</div>

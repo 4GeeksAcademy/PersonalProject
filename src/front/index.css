@@ -3,9 +3,12 @@ body {
   background-color: #b8b8b8; /* tu color base */
   margin: 0;
   padding: 0;
+  padding-top: calc(var(--nav-height) + var(--bar-height));
 }
-:root { --nav-height: 56px; }  /* ajusta a tu navbar real */
-body { padding-top: calc(var(--nav-height) + 40px); } /* ~40px alto de la barra de anuncio */
+:root{
+  --nav-height: 64px;   /* ajusta al alto real de tu navbar */
+  --bar-height: 40px;   /* alto de la announcement bar */
+}  
 
 /* Overlay blanco arriba que genera el difuminado */
 body::before {
